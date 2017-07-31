@@ -75,7 +75,7 @@ class Perceptron (object):
         delta = label - output
         print '_update_weights===', 'delta=', delta, 'label=', label, 'output=', output, 'rate=', rate
         self.weights = map(
-            lambda  (x, w): w + rate * delta * x,
+            lambda (x, w): w + rate * delta * x,
             zip(input_vec, self.weights))
         # 更新bias
         self.bias += rate * delta
