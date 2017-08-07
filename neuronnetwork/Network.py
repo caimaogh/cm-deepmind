@@ -118,22 +118,3 @@ class Network(object):
         """
         for layer in self.layers:
             layer.dump()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

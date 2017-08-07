@@ -75,30 +75,3 @@ class Node(object):
         downstream_str = reduce(lambda ret, conn: ret + '\n\t' + str(conn), self.downstream, '')
         upstream_str = reduce(lambda ret, conn: ret + '\n\t' + str(conn), self.upstream, '')
         return node_str + '\n\tdownstream:' + downstream_str + '\n\tupstream:' + upstream_str
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
